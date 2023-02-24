@@ -12,5 +12,5 @@ router = APIRouter()
 
 
 @router.get('/hello', response_model=HelloResponse, status_code=status.HTTP_200_OK)
-def hello() -> Any:
+async def hello() -> Any:
     return HelloResponse(hello='World')
