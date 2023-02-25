@@ -27,4 +27,4 @@ app.include_router(api_router, prefix=settings.API_V1_STR)
 
 if __name__ == '__main__':
     cwd = pathlib.Path(__file__).parent.resolve()
-    uvicorn.run(app, host=settings.SERVER_HOST, port=settings.SERVER_PORT, log_config=f'{cwd}/log.ini')
+    uvicorn.run(app, host=settings.SERVER_HOST, port=settings.SERVER_PORT, log_config=f'{cwd}/loging.ini')

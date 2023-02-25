@@ -1,6 +1,6 @@
 # FastAPI Fake Imarkt Project
 
-![](backend/app/app/assets/gifs/fortnite-dance.gif)
+![](assets/gifs/fortnite-dance.gif)
 
 ## Fake credentials for test
 jhondoe:password

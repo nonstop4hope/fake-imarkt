@@ -1,6 +1,6 @@
-../venv
+.vscode
+.mypy_cache
+docker-stack.yml
+
 .idea
-
 .env
-
-backend/app/app/logfile.log
