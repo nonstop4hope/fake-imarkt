@@ -4,10 +4,10 @@ from typing import Union
 from fastapi import Depends, HTTPException, status
 from jose import JWTError, jwt
 
-from core.config import settings
-from core.jwt import pwd_context, oauth2_scheme
-from schemas.jwt import TokenData
-from schemas.user import UserInDB, User
+from app.config import settings
+from app.src.auth.config import pwd_context, oauth2_scheme
+from app.schemas.jwt import TokenData
+from app.schemas.user import UserInDB, User
 
 fake_users_db = {
     "johndoe": {

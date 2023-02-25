@@ -2,8 +2,8 @@ import logging
 
 from fastapi import APIRouter, Depends
 
-from schemas.user import User
-from src.jwt_auth import get_current_active_user
+from app.schemas.user import User
+from app.src.auth.jwt_auth import get_current_active_user
 
 logger = logging.getLogger(__name__)
 

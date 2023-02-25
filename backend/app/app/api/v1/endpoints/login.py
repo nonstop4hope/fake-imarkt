@@ -5,9 +5,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from fastapi.security import OAuth2PasswordRequestForm
 from starlette import status
 
-from core.config import settings
-from schemas.jwt import Token
-from src.jwt_auth import authenticate_user, fake_users_db, create_access_token
+from app.config import settings
+from app.schemas.jwt import Token
+from app.src.auth.jwt_auth import authenticate_user, fake_users_db, create_access_token
 
 logger = logging.getLogger(__name__)
 

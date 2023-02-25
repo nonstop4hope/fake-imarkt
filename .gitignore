@@ -1,6 +1,6 @@
-venv
+../venv
 .idea
 
 .env
 
-app/logfile.log
+backend/app/app/logfile.log
