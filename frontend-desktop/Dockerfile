@@ -1,5 +1,5 @@
 # Stage 0, "build-stage", based on Node.js, to build and compile the frontend
-FROM node:latest as build-stage
+FROM node:18 as build-stage
 
 #Если не получается - поменять на "frontend-desktop", наверное
 WORKDIR /.
