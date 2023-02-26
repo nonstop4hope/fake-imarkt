@@ -173,10 +173,10 @@ services:
       args:
         INSTALL_DEV: ${INSTALL_DEV-false}
   
-  frontend:
+  frontend-desktop:
     image: '${DOCKER_IMAGE_FRONTEND?Variable not set}:${TAG-latest}'
     build:
-      context: ./frontend
+      context: ./frontend-desktop
       args:
         FRONTEND_ENV: ${FRONTEND_ENV-production}
     deploy:

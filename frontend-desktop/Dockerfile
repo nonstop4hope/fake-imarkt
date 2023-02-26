@@ -24,7 +24,8 @@ RUN npm run build
 FROM nginx:1.23
 
 # COPY --from=build-stage /app/dist/ /usr/share/nginx/html
-COPY --from=build-stage /dist/ /usr/share/nginx/html
+COPY --from=build-stage /build/ /usr/share/nginx/html
 
-COPY --from=build-stage /nginx.conf /etc/nginx/conf.d/default.conf
+#TODO add nginx conf
+#COPY --from=build-stage /nginx.conf /etc/nginx/conf.d/default.conf
 COPY ./nginx-backend-not-found.conf /etc/nginx/extra-conf.d/backend-not-found.conf
