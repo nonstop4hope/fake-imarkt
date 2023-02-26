@@ -1,7 +1,6 @@
 .vscode
 .mypy_cache
 docker-stack.yml
-node_modules/
 .idea
 .env
 .DS_Store
